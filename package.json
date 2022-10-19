@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^7.5.3",
+    "motion": "^10.14.2",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-inlinesvg": "^3.0.1",
     "sass": "^1.55.0"
   },
   "devDependencies": {

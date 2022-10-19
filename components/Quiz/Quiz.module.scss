@@ -1,0 +1,133 @@
+.wraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quizWraper {
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 8.5rem;
+    padding-right: 8.5rem;
+  }
+  &_nav {
+    display: none;
+    @media (min-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      width: 25rem;
+      padding-bottom: 4rem;
+      color: var(--darkgrey);
+      h4 {
+        padding: 2.4rem 0;
+        border-top: 1px solid rgba(131, 136, 143, 0.25);
+        &:first-of-type {
+          border-top: none;
+          padding: 0 0 2.4rem;
+        }
+      }
+      span {
+        color: #83888f;
+        margin-right: 2.3rem;
+      }
+    }
+  }
+  &_quiz {
+    @media (min-width: 1024px) {
+      width: 73rem;
+    }
+  }
+}
+
+.quizStep {
+  margin-bottom: 11rem;
+  flex-direction: column;
+  position: relative;
+  @media (min-width: 768px) {
+    margin-bottom: 10rem;
+  }
+  &:last-of-type {
+    margin-bottom: 14.4rem;
+  }
+  &_heading {
+    color: var(--lightgrey);
+    padding-bottom: 3.2rem;
+  }
+  &_answers {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &_answer {
+    padding: 2.4rem;
+    color: var(--darkgrey);
+    background-color: #f4f1eb;
+    border-radius: 10px;
+    margin-bottom: 1.6rem;
+    &:last-of-type {
+      margin-bottom: 1rem;
+      @media (min-width: 768px) {
+        margin-bottom: 0;
+      }
+    }
+    &:hover {
+      background-color: var(--orange);
+    }
+    @media (min-width: 768px) {
+      padding: 3.2rem 2.4rem;
+      margin-bottom: 0;
+      height: 25rem;
+      max-width: 32%;
+    }
+    @media (min-width: 1024px) {
+      max-width: 22.8rem;
+    }
+  }
+  &_radio {
+    position: absolute;
+    visibility: hidden;
+    &:checked ~ label > div {
+      background-color: var(--green);
+      color: var(--cream);
+    }
+  }
+}
+
+.summary {
+  background-color: var(--darkgrey);
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+  color: var(--cream);
+  border-radius: 10px;
+  margin-bottom: 5.6rem;
+
+  h6 {
+    text-transform: uppercase;
+    opacity: 0.8;
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 162%;
+    padding-bottom: 0.8rem;
+  }
+  p {
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 167%;
+
+    span {
+      color: var(--green);
+    }
+  }
+}
