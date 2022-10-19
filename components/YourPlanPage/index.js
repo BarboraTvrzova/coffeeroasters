@@ -133,18 +133,21 @@ const YourPlanPage = () => {
           value: "every weak",
           description:
             "$7.20 per shipment. Includes free first-class shipping.",
+          price: "$7.20/mo",
         },
         {
           id: 52,
           answer: "Every 2 weeks",
           value: "every 2 weeks",
           description: "$9.60 per shipment. Includes free priority shipping.",
+          price: "$9.60/mo",
         },
         {
           id: 53,
           answer: "Every month",
           value: "every month",
           description: "$12.00 per shipment. Includes free priority shipping.",
+          price: "$12.00/mo",
         },
       ],
     },
