@@ -2,6 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Button } from "../Utils";
 import styles from "./Quiz.module.scss";
+import Svg from "react-inlinesvg";
 
 const Quiz = ({ data }) => {
   const [answersObject, setAnswersObject] = useState({});
@@ -101,9 +102,10 @@ const Quiz = ({ data }) => {
 export default Quiz;
 
 const QuizStep = ({ data, setObject }) => {
+  const [stepOpen, setStepOpen] = useState(false);
+
   const answers = data.options.map((item) => {
     return (
-      // <>
       <div key={item.id}>
         <input
           type="radio"
@@ -126,15 +128,36 @@ const QuizStep = ({ data, setObject }) => {
           </div>
         </label>
       </div>
-      // {/* </> */}
     );
   });
   return (
-    <div className={styles.quizStep}>
+    <div
+      className={
+        stepOpen
+          ? `${styles.quizStep}`
+          : `${styles.quizStep} ${styles.quizStep_closed}`
+      }
+    >
       <h4 className={styles.quizStep_heading} id={data.id}>
         {data.question}
+        <div
+          onClick={() => {
+            setStepOpen(!stepOpen);
+          }}
+          className={stepOpen ? `${styles.up}` : ""}
+        >
+          <Svg src="/assets/plan/desktop/icon-arrow.svg" />
+        </div>
       </h4>
-      <div className={styles.quizStep_answers}>{answers}</div>
+      <div
+        className={
+          stepOpen
+            ? `${styles.quizStep_answers}`
+            : `${styles.quizStep_answers} ${styles.quizStep_answers_closed}`
+        }
+      >
+        {answers}
+      </div>
     </div>
   );
 };
