@@ -29,6 +29,7 @@ const Header = () => {
               }
               width={15}
               height={16}
+              alt="nav-opener"
             />
           </div>
           {isNavOpen && (

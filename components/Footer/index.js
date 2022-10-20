@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.scss";
 import Link from "next/link";
-import Image from "next/image";
 import Svg from "react-inlinesvg";
 
 const Footer = () => {

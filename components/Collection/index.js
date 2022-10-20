@@ -24,6 +24,7 @@ const CollectionItem = ({ item }) => {
         <Image
           src={`/assets/home/desktop/image-${item.image}.png`}
           layout="fill"
+          alt="coffee type image"
         />
       </div>
       <div className={styles.item_description}>

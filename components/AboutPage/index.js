@@ -25,6 +25,7 @@ const AboutPage = () => {
             <Image
               src="/assets/about/desktop/image-commitment.jpg"
               layout="fill"
+              alt="about page hero image"
             />
           </div>
           <div className={styles.commitment_text}>
@@ -51,6 +52,7 @@ const AboutPage = () => {
               <Image
                 src="/assets/about/desktop/image-quality.jpg"
                 layout="fill"
+                alt="about page quality section image"
               />
             </div>
             <div className={styles.quality_inner_text}>
@@ -70,7 +72,10 @@ const AboutPage = () => {
           <h4>Our headquarters</h4>
           <div className={styles.address_list}>
             <div className={styles.address_list_item}>
-              <Svg src="/assets/about/desktop/illustration-uk.svg" />
+              <Svg
+                src="/assets/about/desktop/illustration-uk.svg"
+                alt="uk map"
+              />
               <div className={styles.address_list_item_text}>
                 <h3>United Kingdom</h3>
                 <ul>
@@ -82,7 +87,10 @@ const AboutPage = () => {
               </div>
             </div>
             <div className={styles.address_list_item}>
-              <Svg src="/assets/about/desktop/illustration-canada.svg" />
+              <Svg
+                src="/assets/about/desktop/illustration-canada.svg"
+                alt="canada map"
+              />
               <div className={styles.address_list_item_text}>
                 <h3>Canada</h3>
                 <ul>
@@ -94,7 +102,10 @@ const AboutPage = () => {
               </div>
             </div>
             <div className={styles.address_list_item}>
-              <Svg src="/assets/about/desktop/illustration-australia.svg" />
+              <Svg
+                src="/assets/about/desktop/illustration-australia.svg"
+                alt="australia map"
+              />
               <div className={styles.address_list_item_text}>
                 <h3>Australia</h3>
                 <ul>
