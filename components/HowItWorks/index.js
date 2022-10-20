@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./HowItWorks.module.scss";
+import { Button } from "../Utils";
 
 const HowItWorks = ({ dark, title }) => {
   return (
@@ -40,6 +41,7 @@ const HowItWorks = ({ dark, title }) => {
           </p>
         </div>
       </div>
+      <Button href="/your-plan" label="Create your plan" />
     </div>
   );
 };

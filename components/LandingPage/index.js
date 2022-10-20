@@ -28,7 +28,7 @@ const LandingPage = ({ items }) => {
         <Collection items={items} />
         <WhyUs />
         <HowItWorks title="How it works" />
-        <Button href="/your-plan" label="Create your plan" />
+        {/* <Button href="/your-plan" label="Create your plan" /> */}
       </motion.div>
     </AnimatePresence>
   );

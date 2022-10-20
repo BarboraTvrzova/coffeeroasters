@@ -15,7 +15,8 @@
       height: 50rem;
     }
     @media (min-width: 1024px) {
-      min-height: calc(100vh - 18rem);
+      // min-height: calc(100vh - 18rem);
+      height: 60rem;
       max-height: 60rem;
     }
   }
@@ -33,13 +34,16 @@
       margin-left: 8.5rem;
     }
   }
+  @media (min-width: 1024px) {
+    padding-bottom: 10rem;
+  }
 }
 
 .us_wraper {
   height: 100%;
   &_dark {
     min-height: 90.2rem;
-    background-color: var(--darkgrey);
+    background-color: #2c343e;
     border-radius: 10px;
     color: var(--cream);
     padding: 6.4rem 2.4rem;

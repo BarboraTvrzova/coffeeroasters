@@ -41,7 +41,7 @@
 
     @media (min-width: 768px) {
       flex-direction: row;
-      border-top: 1px solid var(--orange);
+      border-top: 2px solid var(--orange);
     }
 
     .card {
@@ -69,9 +69,9 @@
             content: "";
             position: absolute;
             display: block;
-            top: -2px;
+            top: -3px;
             left: 0;
-            height: 3px;
+            height: 4px;
             background-color: inherit;
             width: 100%;
           }
@@ -85,7 +85,7 @@
           left: 0rem;
           display: block;
           border-radius: 50%;
-          border: 1px solid var(--green);
+          border: 2px solid var(--green);
           z-index: 3;
           width: 3.1rem;
           height: 3.1rem;
