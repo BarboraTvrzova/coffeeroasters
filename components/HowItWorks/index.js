@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./HowItWorks.module.scss";
 import { Button } from "../Utils";
 
-const HowItWorks = ({ dark, title }) => {
+const HowItWorks = ({ dark, title, btn }) => {
   return (
     <div
       className={
@@ -41,7 +41,7 @@ const HowItWorks = ({ dark, title }) => {
           </p>
         </div>
       </div>
-      <Button href="/your-plan" label="Create your plan" />
+      {btn && <Button href="/your-plan" label="Create your plan" />}
     </div>
   );
 };

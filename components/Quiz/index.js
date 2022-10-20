@@ -62,7 +62,13 @@ const Quiz = ({ data }) => {
               also be redeemed at the checkout.
             </p>
             <Button
-              label={`Checkout - ${answersObject.price}`}
+              label={`Checkout - $${
+                answersObject.deliveries === "every week"
+                  ? 4 * answersObject.price
+                  : answersObject.deliveries === "every 2 weeks"
+                  ? 2 * answersObject.price
+                  : answersObject.price
+              }/mo`}
               onClick={buttonHandler}
             />
           </div>
