@@ -2,11 +2,11 @@ import Link from "next/link";
 
 export const Button = ({ href, label, onClick, disabled }) => {
   return href ? (
-    <button className="btn">
+    <div className="btn">
       <Link href={href} className="btn">
         {label}
       </Link>
-    </button>
+    </div>
   ) : (
     <button className="btn" onClick={() => onClick()} disabled={disabled}>
       {label}
