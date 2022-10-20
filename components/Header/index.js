@@ -13,7 +13,7 @@ const Header = () => {
       <div className={styles.content}>
         <div className={styles.logo}>
           <Link href="/">
-            <Svg src="/assets/shared/desktop/logo.svg" layout="fill" />
+            <Svg src="/assets/shared/desktop/logo.svg" />
           </Link>
         </div>
         <div className={styles.nav_mobile}>

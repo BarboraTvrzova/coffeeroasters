@@ -31,22 +31,13 @@ const Footer = () => {
         </nav>
         <div className={styles.social_icons}>
           <div className={styles.icon}>
-            <Svg
-              src="/assets/shared/desktop/icon-facebook.svg"
-              alt="Facebook icon"
-            />
+            <Svg src="/assets/shared/desktop/icon-facebook.svg" />
           </div>
           <div className={styles.icon}>
-            <Svg
-              src="/assets/shared/desktop/icon-twitter.svg"
-              alt="Twitter icon"
-            />
+            <Svg src="/assets/shared/desktop/icon-twitter.svg" />
           </div>
           <div className={styles.icon}>
-            <Svg
-              src="/assets/shared/desktop/icon-instagram.svg"
-              alt="Instagram icon"
-            />
+            <Svg src="/assets/shared/desktop/icon-instagram.svg" />
           </div>
         </div>
       </div>

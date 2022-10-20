@@ -72,10 +72,7 @@ const AboutPage = () => {
           <h4>Our headquarters</h4>
           <div className={styles.address_list}>
             <div className={styles.address_list_item}>
-              <Svg
-                src="/assets/about/desktop/illustration-uk.svg"
-                alt="uk map"
-              />
+              <Svg src="/assets/about/desktop/illustration-uk.svg" />
               <div className={styles.address_list_item_text}>
                 <h3>United Kingdom</h3>
                 <ul>
@@ -87,10 +84,7 @@ const AboutPage = () => {
               </div>
             </div>
             <div className={styles.address_list_item}>
-              <Svg
-                src="/assets/about/desktop/illustration-canada.svg"
-                alt="canada map"
-              />
+              <Svg src="/assets/about/desktop/illustration-canada.svg" />
               <div className={styles.address_list_item_text}>
                 <h3>Canada</h3>
                 <ul>
@@ -102,10 +96,7 @@ const AboutPage = () => {
               </div>
             </div>
             <div className={styles.address_list_item}>
-              <Svg
-                src="/assets/about/desktop/illustration-australia.svg"
-                alt="australia map"
-              />
+              <Svg src="/assets/about/desktop/illustration-australia.svg" />
               <div className={styles.address_list_item_text}>
                 <h3>Australia</h3>
                 <ul>
