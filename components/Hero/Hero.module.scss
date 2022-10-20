@@ -61,15 +61,21 @@
       padding-bottom: 2.4rem;
       @media (min-width: 768px) {
         font-size: 4.8rem;
+        max-width: 39.8rem;
       }
       @media (min-width: 1024px) {
         font-size: 7.2rem;
+        padding-bottom: 5.6rem;
+        max-width: unset;
       }
     }
     p {
       font-size: 1.5rem;
       opacity: 0.8;
       line-height: 167%;
+      @media (min-width: 768px) {
+        padding-bottom: 24px;
+      }
     }
     button {
       margin-top: 4rem;
@@ -82,9 +88,10 @@
       max-width: 50.8rem;
     }
     @media (min-width: 1024px) {
-      padding: 11rem 0 11rem 8.5rem;
+      padding: 11.7rem 0 11.6rem 8.5rem;
       height: 45rem;
       max-width: 60.6rem;
+      justify-content: space-between;
     }
   }
 }

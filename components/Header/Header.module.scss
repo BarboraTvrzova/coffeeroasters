@@ -1,6 +1,10 @@
 .wraper {
   padding: 2.8rem 0 3.6rem;
   position: relative;
+
+  @media (min-width: 768px) {
+    padding: 4.4rem 0 4.4rem;
+  }
 }
 
 .content {
